@@ -12,6 +12,21 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="form">  
+      <form action="#">
+        <label for="title">title: </label>
+        <input type="text" id="title">
+        <label for="description">description:</label>
+        <textarea name="" id="description"></textarea>
+        <label for="date">Date:</label><input type="date">
+        <select name="prioerity" id="prioerity">
+          <option value="prioerity1" id="prioerity">prioerity1</option>
+          <option value="prioerity2" id="prioerity">prioerity2</option>
+          <option value="prioerity3" id="prioerity">prioerity3</option>
+        </select>
+        <input type="submit" name="submit" id="submit">
+      </form>
+    </div>
     <header>
       <nav><h1>TODO-APP</h1></nav>
     </header>
@@ -26,14 +41,11 @@
     <div class="content">
       <h1 class="contentH1">Inbox</h1>
       <div class="contentTaskes">
-        <!-- <img src="" alt="">
-        <h3>Capture now, plan later</h3>
-        <p>
-          Inbox is your go-to spot for quick <br />
-          task entry. Clear your mind now,<br />
-          organize when you’re ready.
-        </p>
-        <button class="" id="addTaskContent">+ Add task</button> -->
+        <h1 class="title">title</h1>
+        <p class="description"> description</p>
+        <p class="date"> date</p>
+        <span class="prioerity"></span>
+      </div>
       </div>
     </div>
   </body>

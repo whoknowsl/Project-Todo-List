@@ -1,13 +1,14 @@
-export class Todolist {
+ class Todolist {
   constructor(title, description, date, priority) {
+    this.id = Date.now();
     this.title = title;
     this.description = description;
-    this.date = date.now();
+    this.date = date;
     this.priority = priority;
   }
 }
 
-export class Inbox {
+ class Inbox {
   constructor() {
     this.tasks = [];
   }
