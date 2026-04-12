@@ -126,3 +126,14 @@ taskForm.addEventListener("submit", (e) => {
 //window.editTask = editTask;
 window.editTask = editTask;
 window.deleteTask = deleteTask;
+
+const closeProjectBtn = document.getElementById("close-project-form-btn");
+const openProjectBtn = document.getElementById("open-project-form-btn");
+const projectForm = document.getElementById("project-form");
+openProjectBtn.addEventListener("click", () => {
+  projectForm.classList.toggle("hidden");
+});
+
+closeProjectBtn.addEventListener("click",()=>{
+ 
+})
