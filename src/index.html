@@ -17,9 +17,12 @@
       <div class="todo-app-side-bar">
         <button id="open-task-form-btn">Add New Task</button>
         <h1>Project</h1>
-        <button class="open-project-form-btn" id="open-project-form-btn">project</button>
+        <button class="open-project-form-btn" id="open-project-form-btn">
+          project
+        </button>
+        <div id="projets"></div>
       </div>
-      <form class="project-form hidden" id="project-form">
+      <form class="project-form -hidden" id="project-form">
         <div>
           <button
             id="close-project-form-btn"
@@ -48,12 +51,25 @@
           </button>
         </div>
         <div class="project-form-body">
-          <label for="prject-title" class="project-form-label">Project Name</label>
-          <input type="text" class="project-control" id="project-title-input" placeholder="Enter your project name" required>
-          <div class="project-task-form-footer"><button id="add-or-update-task-project-btn"
-            class="btn large-btn"
-            type="submit">Add project</button></div>
-        </div>
+          <label for="prject-title" class="project-form-label"
+            >Project Name</label
+          >
+          <input
+            type="text"
+            class="project-control"
+            id="project-title-input"
+            placeholder="Enter your project name"
+            required
+          />
+          <div class="project-task-form-footer">
+            <button
+              id="add-or-update-task-project-btn"
+              class="btn large-btn"
+              type="submit"
+            >
+              Add project
+            </button>
+          </div>
         </div>
       </form>
       <form class="task-form hidden" id="task-form">

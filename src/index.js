@@ -130,10 +130,39 @@ window.deleteTask = deleteTask;
 const closeProjectBtn = document.getElementById("close-project-form-btn");
 const openProjectBtn = document.getElementById("open-project-form-btn");
 const projectForm = document.getElementById("project-form");
+const titleProjectInput = document.getElementById("project-title-input");
+const projectSideBar = document.getElementById("projets");
+const addProjectBtn = document.getElementById("add-or-update-task-project-btn");
+const projectData = [];
+const currentProject = {
+  title: titleProjectInput.value,
+};
+
 openProjectBtn.addEventListener("click", () => {
-  projectForm.classList.toggle("hidden");
+  projectForm.classList.toggle("-hidden");
 });
 
-closeProjectBtn.addEventListener("click",()=>{
- 
+closeProjectBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  projectForm.classList.toggle("-hidden");
+});
+function updateProject() {
+  if (!projectData.includes(currentProject)) {
+    projectData.push(currentProject);
+  }
+  updateSidebar();
+}
+function updateSidebar() {
+  projectSideBar.innerHTML = "";
+  projectData.forEach((title) => {
+    projectSideBar.innerHTML += `
+    <button class="projectBtn">${project.title}</button>`;
+  });
+}
+addProjectBtn.addEventListener("submit",(e)=>{
+  e.preventDefault();
+  currentProject = projectTitleInput.value;
+  updateProject();
+  projectTitleInput.value = "";
+  projectForm.classList.toggle("hidden");
 })
