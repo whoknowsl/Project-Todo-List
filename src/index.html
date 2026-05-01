@@ -21,8 +21,7 @@
           project
         </button>
         <div id="projets"></div>
-      </div>
-      <form class="project-form -hidden" id="project-form">
+      </div>      <form class="project-form -hidden" id="project-form">
         <div>
           <button
             id="close-project-form-btn"
@@ -120,6 +119,13 @@
             cols="30"
             rows="5"
           ></textarea>
+          <!-- ✅ Fixed priority select -->
+          <label class="task-form-label" for="priority-input">Priority</label>
+          <select class="form-control" id="priority-input">
+            <option value="low">Low</option>
+            <option value="medium" selected>Medium</option>
+            <option value="high">High</option>
+          </select>
         </div>
         <div class="task-form-footer">
           <button
